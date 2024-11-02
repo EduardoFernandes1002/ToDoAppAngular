@@ -1,0 +1,11 @@
+<div class="tarefa">
+  <fieldset style="display: flex; flex-direction: column">
+    <div>
+      <input type="checkbox" (concluido)="toggleConclusao()">
+      <span>{{ tarefa.tarefa }}</span>
+    </div>
+    <p>{{ tarefa.descricao }}</p>
+    <div style="display: flex; align-self: end; gap: 5px;"><span> {{ tarefa.data }}</span><br>
+    <button (click)="onDelete()">Excluir</button></div>
+  </fieldset>
+</div>

@@ -1,13 +1,16 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ListaDeTarefaComponent } from './lista-de-tarefa/lista-de-tarefa.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'],
+  imports: [ListaDeTarefaComponent] // Importação standalone do `ListaDeTarefaComponent`
+  // Importação standalone do `ListaDeTarefaComponent`
 })
 export class AppComponent {
-  title = 'input-output-app';
+  title = 'Minha Lista de Tarefas';
 }
+
+
